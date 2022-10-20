@@ -1,24 +1,36 @@
 #include <stdio.h>
 
-int static bar = 0;
-
+// Declare Function
 void beatbox();
 
-void beatbox(){
-    if (bar % 4 == 0){
-        printf("Potato Cats!");
-        printf("");
-    }
-    else{
-        printf("Boots N Cats N");
+// Define Function
+void beatbox(bar){
+    // Setting Loop Length
+    for(int i=0;i<bar;i++){
+
+        // Printing "Potato Cats!" evert 4th loop
+        if ((i+1) % 4 == 0){
+            printf("Potato Cats!\n");
+            printf("\n");
+        }
+        
+        // Printing Boots N Cats N 
+        else{
+            printf("Boots N Cats N\n");
+        }
     }
 }
 
 int main(){
+    // Declare variable
+    int input;
 
+    // Getting User Input
     printf("Input a number of bars: ");
-    scanf("%d", bar);
+    scanf("%d", &input);
+    printf("\n");
 
-    printf("%d", bar);
+    // Call Functions
+    beatbox(input);
 
 }
