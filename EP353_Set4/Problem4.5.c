@@ -3,9 +3,7 @@
 #include <math.h>
 #include <sndfile.h>
 
-//Excute this code using:
-//clang 01.SineWave.c -o 01.SineWave -lsndfile; ./01.SineWave
-
+//-----------------------------------------------------------------------------
 #define kSampleRate 44100
 #define kSec 1
 #define kNumFrames (kSampleRate * kSec)
